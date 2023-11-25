@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="arfesan.remzi.RaporYaz">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Firma"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextFirma"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFirma"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        android:ems="10"
+        android:hint="Firma İsmi"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        app:layout_constraintRight_toLeftOf="@+id/spinnerSegment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.533" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Model"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextModel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:id="@+id/editTextModel"
+        android:layout_width="174dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Model İsmi"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        app:layout_constraintRight_toLeftOf="@+id/spinnerFrenSistemi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirma"
+        android:layout_marginEnd="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerSegment"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerFrenSistemi"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="@+id/spinnerSegment"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSegment" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1.Dingil"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerFrenSistemi"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDingil_1"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Spinner
+        android:id="@+id/spinnerKaliper_1"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerDingil_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="Kaliper"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerKaliper_1"
+        app:layout_constraintLeft_toLeftOf="@+id/spinnerKaliper_1" />
+
+    <Spinner
+        android:id="@+id/spinnerKoruk_1"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        android:spinnerMode="dialog"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKaliper_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="Koruk"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerKoruk_1"
+        app:layout_constraintLeft_toLeftOf="@+id/spinnerKoruk_1" />
+
+    <Spinner
+        android:id="@+id/spinnerCins_1"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKoruk_1"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDingil_1" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="Cins"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCins_1"
+        app:layout_constraintLeft_toLeftOf="@+id/spinnerCins_1" />
+
+    <Spinner
+        android:id="@+id/spinnerServis_1"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerCins_1"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="Servis"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerServis_1"
+        app:layout_constraintLeft_toLeftOf="@+id/spinnerServis_1" />
+
+    <Spinner
+        android:id="@+id/spinnerImdat_1"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerServis_1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="İmdat"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerImdat_1"
+        app:layout_constraintLeft_toLeftOf="@+id/spinnerImdat_1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="2.Dingil"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDingil_1"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDingil_2"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Spinner
+        android:id="@+id/spinnerKaliper_2"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerDingil_2"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Spinner
+        android:id="@+id/spinnerKoruk_2"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKaliper_2"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Spinner
+        android:id="@+id/spinnerServis_2"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerCins_2"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerImdat_2"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerServis_2"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="3.Dingil"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDingil_2"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDingil_3"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerKaliper_3"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerDingil_3"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerKoruk_3"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKaliper_3"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerServis_3"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerCins_3"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerImdat_3"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerServis_3"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="4.Dingil"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDingil_3"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDingil_4"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerKaliper_4"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerDingil_4"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerKoruk_4"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKaliper_4"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerServis_4"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerCins_4"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerImdat_4"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerServis_4"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="5.Dingil"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDingil_4"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDingil_5"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerKaliper_5"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerDingil_5"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerKoruk_5"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKaliper_5"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:layout_marginStart="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerServis_5"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerCins_5"
+        android:layout_marginLeft="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerImdat_5"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerServis_5"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/editTextAciklama"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Açıklama"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDingil_5"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="KAYDET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAciklama"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+
+    <Spinner
+        android:id="@+id/spinnerCins_2"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKoruk_2"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDingil_2" />
+
+    <Spinner
+        android:id="@+id/spinnerCins_3"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKoruk_3"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDingil_3" />
+
+    <Spinner
+        android:id="@+id/spinnerCins_4"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKoruk_4"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDingil_4" />
+
+    <Spinner
+        android:id="@+id/spinnerCins_5"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerKoruk_5"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDingil_5" />
+
+
+
+</android.support.constraint.ConstraintLayout>
